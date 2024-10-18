@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Estudiantes</title>
+</head>
+<body>
+    <h1>Gestión de Materias, Estudiantes y Condicion de Asistencia</h1>
+
+    <!-- Formulario para agregar materias -->
+    <form id="formMateria">
+        <h2>Agregar Materia</h2>
+        <input type="text" id="nombreMateria" placeholder="Nombre de la Materia" required>
+        <input type="text" id="nombreProfesor" placeholder="Nombre del Profesor" required>
+        <input type="number" id="clasesTotales" placeholder="Clases Totales" required>
+        <button type="submit">Agregar Materia</button>
+    </form>
+
+    <!-- Formulario para agregar estudiantes con notas -->
+<form id="formEstudiante">
+    <h2>Agregar Estudiante</h2>
+    <select id="materiaSelect"></select>
+    <input type="text" id="nombreEstudiante" placeholder="Nombre del Estudiante" required>
+    <input type="number" id="asistenciaEstudiante" placeholder="Clases Asistidas" required>
+    
+    <!-- Campo adicional para ingresar las notas -->
+    <input type="number" id="nota1" placeholder="Nota 1" required>
+    <input type="number" id="nota2" placeholder="Nota 2" required>
+    <input type="number" id="nota3" placeholder="Nota 3 (opcional)">
+    
+    <button type="submit">Agregar Estudiante</button>
+</form>
+
+    <!-- Contenedor para mostrar resultados -->
+    <div id="resultado"></div>
+
+    <!-- Aquí agregamos los botones de editar y eliminar -->
+    <div id="resultado"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
